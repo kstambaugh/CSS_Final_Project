@@ -16,14 +16,33 @@
         <div id="user-interactions">
             <div class="mobile-header-display" id="img-logo">logo</div>
             <div class="mobile-header-display" id="search-bar">search bar</div>
-            <div id="social-media-icons">social media icons</div>
+            <div class="mobile-header-display" id="social-media-icons">social media icons</div>
+            <div class="mobile-header-display" id="sign-up-buttons">
+                <button class="menu__item login-buttons" id="black-button">sign in</button>
+                <button class="menu__item login-buttons" id="red-button">sign up</button>
+            </div>
         </div>
         <nav id="nav-bar">
-            <div class="hamburger-menu">
+            <div class="browser_menu__box">
+                <ul>
+                    <li><a class="menu__item" href="#">Collections</a></li>
+                    <li><a class="menu__item" href="#">Game Rules</a></li>
+                    <li><a class="menu__item" href="#">Sources</a></li>
+                    <li><a class="menu__item" href="#">Tools</a></li>
+                    <li><a class="menu__item" href="#">Marketplace</a></li>
+                    <li><a class="menu__item" href="#">Media</a></li>
+                    <li><a class="menu__item" href="#">Forums</a></li>
+                    <li><a class="menu__item" href="#">New Player Guide</a></li>
+                    <li><a class="menu__item" href="#">Subscribe</a></li>
+                </ul>
+            </div>
+            <!-- this is for the mobile side of the code -->
+            <div id="hide-hamburger" class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
                     <span></span>
                 </label>
+
 
 
                 <ul class="menu__box">
@@ -42,30 +61,36 @@
                     <li><a class="menu__item" href="#">Subscribe</a></li>
                 </ul>
             </div>
+            <!-- mobile hamburger menu ends here -->
         </nav>
     </header>
     <main>
         <section id="top-section">
-            <div id="top-text-box">
-                <h1>THERE IS SOME INTICING INFORMATION HERE PLEASE EXPLORE MY SITE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet dolorem et, dolore recusandae
-                    rerum,
-                    consectetur impedit iste optio voluptas hic culpa quisquam obcaecati voluptatibus officiis iusto qui
-                    inventore accusantium?</p>
-                <button id="desperate-signup">sign up</button>
+            <div id="top-text-div">
+                <div id="top-text-box">
+                    <h1>THERE IS SOME INTICING INFORMATION HERE PLEASE EXPLORE MY SITE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet dolorem et, dolore recusandae
+                        rerum,
+                        consectetur impedit iste optio voluptas hic culpa quisquam obcaecati voluptatibus officiis iusto
+                        qui
+                        inventore accusantium?</p>
+                    <button id="desperate-signup">sign up</button>
+                </div>
             </div>
             <div id="main-links-container">
-                <div class="popular-link" id="pop-link1">
+                <div class="popular-link hero-image" id="hero-image">
                     <a href="#">
                         <span class="blue" data-label="Create a Character">Create A Character (Hero Image)</span>
                     </a>
+
                 </div>
-                <div class="popular-link" id="pop-link2">
+                <div class="popular-link hero-image" id="pop-link2">
                     <a href="#">
                         <span class="purple" data-label="Create a Character">Create A Character (Hero Image)</span>
                     </a>
+
                 </div>
-                <div class="popular-link" id="pop-link3">
+                <div class="popular-link hero-image" id="pop-link3">
                     <a href="#">
                         <span class="orange" data-label="Create a Character">Create A Character (Hero Image)</span>
                     </a>
@@ -74,91 +99,121 @@
         </section>
         <section id="article-section">
             <div class="maj-article">
-                <article class="page-article" id="maj-article-card1">
-                    <div id="maj-article-card1-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article page-article" id="maxcard1">
+                    <div id="maxcard1-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
-                <article class="page-article" id="maj-article-card2">
-                    <div id="maj-article-card2-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article page-article" id="maxcard2">
+                    <div id="maxcard2-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
             </div>
             <div class="min-article">
-                <article id="min-article-card1">
-                    <div id="min-article-card1-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article" id="mincard1">
+                    <div id="mincard1-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
-                <article id="min-article-card2">
-                    <div id="min-article-card2-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article" id="mincard2">
+                    <div id="mincard2-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
-                <article id="min-article-card3">
-                    <div id="min-article-card3-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article" id="mincard3">
+                    <div id="mincard3-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
-                <article id="min-article-card4">
-                    <div id="min-article-card4-img"><img src="" alt="">article image goes here</div>
+                <article class="mobile-article" id="mincard4">
+                    <div id="mincard4-img"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
                     <p class="article-title">Article Title</p>
                     <p>article information goes here</p>
                 </article>
+
             </div>
-            <button id="more-articles-button">See All Posts</button>
         </section>
+        <section>
+            <div>
+                <button id="more-articles-button">See All Posts</button>
+            </div>
+        </section>
+
         <section id="links-section">
-            <div id="subscription-link">
-                Subscription Benefits
-                <div> <img src="" alt=""> image</div>
+            <div class="second-set-link hero-image" id="subscription-link">
+                <span class="purple">Subscription Benefits</span>
+
             </div>
-            <div id="create-character-link">
-                Create A Character
-                <div> <img src="" alt=""> image</div>
+            <div class="second-set-link hero-image" id="create-character-link">
+                <span class="blue">Create a Character</span>
+
             </div>
-            <div id="homebrew-link">
-                Homebrew Content
-                <div> <img src="" alt=""> image</div>
+            <div class="second-set-link hero-image" id="homebrew-link">
+                <span class="green">Homebrew Content</span>
+
             </div>
-            <div id="build-encounter-link">
-                Build an Encounter
-                <div> <img src="" alt=""> image</div>
+            <div class="second-set-link hero-image" id="build-encounter-link">
+                <span class="orange">Build an Encounter</span>
             </div>
         </section>
     </main>
     <footer>
-        <div id="footer-image-logo"><img src="" alt="">DND logo</div>
+        <div id="footer-image-logo"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAMFBMVEXx8/XCy9K/yND09vfHz9bj5+va3+TK0tjR193d4ubo6+7W3OHr7vHN1NvO1tv3+fnOgRpoAAADkElEQVR4nO2a27ajIAxAMeANsef//3ak1laLCISLdFb2u8iWQCDImv8EdncHUkEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitUEitVGBSD9o+shW7hSBZp5axTdY2w0CANnYfSIAk2RL93dwptoHUuUuERAds9AJTIN3iUyM20SWGJvDR+UWEZiVVeOlIkJVbhCBZrzUePI39mEq5UVAXA/HNiqqC5r2xUVg8LBYUSG5pbQIdD7D8RoU3vk3XFgkxEOrSO9JX1ikDfLQKg/PlsuKeCxXhsno13RJEUB4LMjGJ7wKiiA9FnwSfTkRmLAejA1uk2IiAfnjhMnZPkoEmqnVO/B28H9kjvFgzDnlMSLQyLX1RcX7mTiPZfFyRBdGpN+17/u8jBRh3PHNMCL7TZ+r/RUYYz30my7HJFzke/XxWFFgwC9Ye5O0Io0KaH6lt3Qt1EQmFTF65T5iR0+QzeQiuoJFjHzAnSLojH5iklBkChRJM0HeJrYxiR8RV2iJdBrapLOYICb7V9NXM1AjEw6IxmKCWH6PhyPHcTRmq3gOn05NECMijl27jiyR2oNZdvWYzL6f7txxVlDW7kRwVvJCbRrf4cJded1a4I1CnbwJdx7pXynOVdlMlNINThYY5MEKxNR1k6tWA1kCS2MmRvQJEcBZ0QwsYoVgppOcR93IQ+Elf9+LTE6R1KnwyFdhOJ9IxsB68rV0HUWgEf08DMPciwZ9LfkiZ2BpuDx0cC8CYpRKF8GXT6nkOHhV+KykOoTYTQ57lY8I9MarW/zld+7AerLPxh+Rs+MPV13wZd5Kjj2WyW6f9xIBW+7iakRFWPbAenZud8xaReByL9GFq5QILM2nbMfcHsuonB8B7OTaY5m8i7ZaBNynURn0N0K+PZbJ9om1iPB4L3fXwz8eCeqK3mwbYS3iNTG59L7Bz50Kj/2aNhHwvqD0KI4+KRhYmjXZsYDMxUefpOL/YRKxbrpYSNnJ59rbKOBlZz2bsMA4cC3EsTdTKHTMhz7j/KsiR0edYN7ruEbIe5iy9gkQH5Cri+RYeqJvfZowd5Rc2YpyRTPhAYUslT9OTdLXeb3hLfK5s8WryFkqOea19296GIsXCOTg3s8hy4O4Zd1NxG7xum25SgKXQy8aIebO/lv1b8C5klKqX9cgCIIgCIIgCIIgCIIgCIIgCIIgCOLDP94jPEulHQojAAAAAElFTkSuQmCC"
+                alt=""></div>
         <div id="footer-links">
-            <ul>QUICK LINKS
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul>
+                <h6>QUICK LINKS</h6>
+                <li><a href="#"></a>COMPENDIUM</li>
+                <li><a href="#"></a>BUILDER</li>
+                <li><a href="#"></a>CHARACTERS</li>
+                <li><a href="#"></a>CHANGELOG</li>
+                <li><a href="#"></a>CAREERS</li>
             </ul>
-            <ul>SUPPORT
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul>
+                <h6>SUPPORT</h6>
+                <li><a href="#"></a>HELP PORTAL</li>
+                <li><a href="#"></a>SUPPORT FORUM</li>
+                <li><a href="#"></a>CONTACT US</li>
+                <li><a href="#"></a>DO NOT SELL MY INFO</li>
             </ul>
-            <ul>FOLLOW US
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+            <ul>
+                <h6>FOLLOW US</h6>
+                <li><a href="#"></a>TWITTER</li>
+                <li><a href="#"></a>FACEBOOK</li>
+                <li><a href="#"></a>YOUTUBE</li>
+                <li><a href="#"></a>TWITCH</li>
+                <li><a href="#"></a>INSTAGRAM</li>
             </ul>
         </div>
         <div id="footer-lower">
-            <div id="footer-copyright"></div>
-            <div class="ddb-footer-copyright-site"> ©2022 D&D Beyond | All Rights Reserved </div>
-            <div class="ddb-footer-copyright-wotc">" Dungeons & Dragons, D&D, their respective logos, and all Wizards
-                titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2022
-                Wizards. "</div>
-
+            <div id="footer-copyright">
+                <div class="ddb-footer-copyright-site"> ©2022 D&D Beyond | All Rights Reserved </div>
+                <div class="ddb-footer-copyright-wotc">" Dungeons & Dragons, D&D, their respective logos, and all
+                    Wizards
+                    titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries.
+                    ©2022
+                    Wizards. "</div>
+            </div>
         </div>
     </footer>
 </body>

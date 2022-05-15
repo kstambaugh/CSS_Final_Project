@@ -1,112 +1,103 @@
-body {
-    color: #242527;
-    font-size: 13px;
-    font-family: Roboto, Helvetica, sans-serif;
-}
+    body {
+        color: #242527;
+        font-size: 13px;
+        font-family: Roboto, Helvetica, sans-serif;
+    }
 
-body {
-    margin: 0;
-    font-size: 1em;
-    line-height: 1.4;
-}
+    body {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.4;
+    }
 
-body {
-    display: block;
-}
+    body {
+        display: block;
+    }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
-li {
-    list-style-type: none;
-}
-
-
-/* logo, search bar, social media icons and sign in bar */
-
-#user-interactions {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* nav bar */
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-nav li {
-    display: inline;
-}
+    li {
+        list-style-type: none;
+    }
 
 
-/* top part of site (hero image and links) */
+    /* logo, search bar, social media icons and sign in bar */
 
-#top-section {
-    display: grid;
-    background-image: url(https://www.fillmurray.com/1041/685);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    height: 85vh;
-}
+    #user-interactions {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-#top-text-box {
-    width: 40%;
-    font-size: x-large;
-}
+    /* nav bar */
 
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
-#main-links-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to top, #333, transparent);
+    nav li {
+        display: inline;
+    }
 
 
-}
+    /* top part of site (hero image and links) */
 
-.popular-link {
-    background-color: white;
-    width: 370px;
-    margin: 30px;
-}
+    #top-section {
+        display: grid;
+        background-image: url(https://www.fillmurray.com/1041/685);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 85vh;
+    }
 
-#pop-link1 {
-    color: blue;
-}
-
-#pop-link2 {
-    color: purple;
-}
-
-#pop-link3 {
-    color: orange;
-}
+    #top-text-box {
+        width: 40%;
+        font-size: x-large;
+    }
 
 
-#article-section {
-    display: block;
-}
-
-.maj-article {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.page-article {
-    background-color: teal;
-}
+    #main-links-container {
+        display: flex;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to top, #333, transparent);
 
 
+    }
+
+    .popular-link {
+        background-color: white;
+        width: 370px;
+        margin: 30px;
+    }
+
+    #pop-link1 {
+        color: blue;
+    }
+
+    #pop-link2 {
+        color: purple;
+    }
+
+    #pop-link3 {
+        color: orange;
+    }
 
 
+    #article-section {
+        display: block;
+    }
 
-/* delete this when done */
-div {
-    border: .5px solid black;
-}
+    .maj-article {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .page-article {
+        background-color: teal;
+    }
